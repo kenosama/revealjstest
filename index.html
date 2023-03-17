@@ -5,10 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<title>reveal.js</title>
-
+		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/sky.css">
+		
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +17,215 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<div class="wrapper">
+					<div class="inner-wrapper">
+						<div class="landscape"></div>
+					</div>
+					<div class="nrw">
+						<span class="new">
+							<span class="letter">INTRO
+							</span>
+							<span class="letter"> 2</span>
+						</span>
+						<span class="retro">
+							<span class="letter">R</span>
+							<span class="letter">e</span>
+							<span class="letter">v</span>
+							<span class="letter">e</span>
+							<span class="letter">a</span>
+							<span class="letter">l</span>
+						</span>
+						<span class="wave">
+							<span class="letter">.</span>
+							<span class="letter">J</span>
+							<span class="letter">S</span>
+						</span>
+					</div>
+					<div class="triangle"></div>
+				</div></section>
+				<section data-auto-animate>
+					<h1>What is<br>
+						 <img src="https://static.slid.es/reveal/logo-v1/reveal-black-text.svg" alt="reveal.js"
+						style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo"></h1>
+						
+				</section>
+				<section data-auto-animate>
+					<img src="https://static.slid.es/reveal/logo-v1/reveal-black-text.svg" alt="reveal.js"
+						style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+					<ul>
+						<li>reveal.js is an open-source, HTML-based presentation framework that allows you to create beautiful and interactive
+						presentations.</li>
+					</ul>
+					<aside class="notes">
+						reveal.js is an open-source, HTML-based presentation framework that allows you to create beautiful and interactive
+						presentations.
+					</aside>
+				</section>
+				<section>
+					<section>
+						<h1>How to install</h1>
+					</section>
+					<section id="fragments">
+						<h3>Basic Setup</h3>
+						
+						
+						<p class="fragment">
+							Download the latest reveal.js version @ <br>
+						<a href="https://github.com/hakimel/reveal.js/archive/master.zip">https://github.com/hakimel/reveal.js/archive/master.zip</a></p>
+						<p class="fragment">
+							Unzip and replace the example contents in index.html with your own.
+						</p>
+						<p class="fragment">
+						Open index.html in a browser to view it
+						</p>
+						<p class="fragment">That's it 🚀</p>
+						<aside class="notes">
+							first i would advise you to go to the Revealjs website, there y'all find the basic setup. 
+						</aside>
+					</section>
+				</section>
+				<section>
+					<section>
+					<h1>HTML you said?</h1>
+					</section>
+					<section>
+						<h3>Indeed, <br>
+							the two first slides look like this <br>
+							😄</h3>
+					</section>
+					<section>
+						<pre><code data-line-numbers="2-3|4-6|7-16|17-18">
+						<div class="reveal">
+							<div class="slides">
+						<section data-auto-animate>
+							<h1>What is Reveal.js</h1>
+						</section>
+						<section data-auto-animate>
+							<h1>What is Reveal.js</h1>
+							<ul>
+								<li>reveal.js is an open-source,
+									 HTML-based presentation framework
+								that allows you to create beautiful and
+								interactive
+								presentations.</li>
+							</ul>
+						</section>		
+						</div>
+						</div>
+					</code></pre>
+					<aside class="notes">
+						<p>The Two first lines of code initiates the JS script of Reveal and the second one announce the slides.</p>
+						<br>
+						<p>Then we have our first page of presentation because we opened a section</p>
+						<br>
+						<p>The second section is the second slide (in our case the third one)
+						</p>
+						<br>
+						<p>Then we close the div to close the script... Simple HTML RIGHT?</p>
+					</aside>
+					</section>
+				</section>
+				<section data-auto-animate>
+					<h3>So if it is HTML, it means that sky is the limit???</h3>
+				</section>
+				<section data-auto-animate>
+					<h3>So if it is HTML, it means that sky is the limit???</h3>
+					<p>Almost, just need to read the doc and you will find useful informations.</p>
+				</section>
+				<section>
+					<section data-background="#dddddd">
+						<h2>Slide Backgrounds</h2>
+						<p>Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are
+							supported.</p><a href="#" class="navigate-down"><img class="r-frame" style="background: rgba(255,255,255,0.1);"
+								width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow"></a>
+					</section>
+					<section data-background="https://static.slid.es/reveal/image-placeholder.png">
+							<h2>Image Backgrounds</h2>
+							<pre>
+								<code class="hljs html">
+									&lt;section data-background="image.png"&gt;
+								</code>
+							</pre>
+					</section>
+					<section data-background="https://static.slid.es/reveal/image-placeholder.png" data-background-repeat="repeat"
+						data-background-size="100px">
+						<h2>Tiled Backgrounds</h2>
+						<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+					</section>
+					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4"
+						data-background-color="#000000">
+						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							<h2>Video Backgrounds</h2>
+							<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+						</div>
+					</section>
+					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+						<h2>... and GIFs!</h2>
+					</section>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<h2>Auto-Animate</h2>
+					<p>Automatically animate matching elements across slides with <a
+							href="https://revealjs.com/auto-animate/">Auto-Animate</a>.</p>
+					<div class="r-hstack justify-center">
+						<div data-id="box1" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;">
+						</div>
+						<div data-id="box2" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;">
+						</div>
+						<div data-id="box3" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;">
+						</div>
+					</div>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+						<div data-id="box1" data-auto-animate-delay="0"
+							style="background: cyan; width: 150px; height: 100px; margin: 10px;"></div>
+						<div data-id="box2" data-auto-animate-delay="0.1"
+							style="background: magenta; width: 150px; height: 100px; margin: 10px;"></div>
+						<div data-id="box3" data-auto-animate-delay="0.2"
+							style="background: yellow; width: 150px; height: 100px; margin: 10px;"></div>
+					</div>
+					<h2 style="margin-top: 20px;">Auto-Animate</h2>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-stack">
+						<div data-id="box1" style="background: cyan; width: 300px; height: 300px; border-radius: 200px;"></div>
+						<div data-id="box2" style="background: magenta; width: 200px; height: 200px; border-radius: 200px;"></div>
+						<div data-id="box3" style="background: yellow; width: 100px; height: 100px; border-radius: 200px;"></div>
+					</div>
+					<h2 style="margin-top: 20px;">Auto-Animate</h2>
+				</section>
+				<section id="fragments">
+					<h2>Fragments</h2>
+					<p>Hit the next arrow...</p>
+					<p class="fragment">... to step through ...</p>
+					<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span>
+					</p>
+					<aside class="notes">This slide has fragments which are also stepped through in the notes window.</aside>
+				</section>
+				<section id="fragments">
+					<pre>
+						<code>
+					<section id="fragments">
+					<h2>Fragments</h2>
+					<p>Hit the next arrow...</p>
+					<p class="fragment">... to step through ...</p>
+					<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span>
+					</p>
+					<aside class="notes">This slide has fragments which are also stepped through in the notes window.</aside>
+					</section>
+					</code>
+				</pre>
+				</section>
+				<section>
+					<h3>This is just the beginning</h3>
+					<p>it is your turn to try and enjoy the beast 😋</p>
+				</section>
+				<section>
+					thanks for listening!!!
+				</section>
+				
 			</div>
 		</div>
 
